@@ -1,2 +1,7 @@
-<p id="content">show: {{ data }} </p>
-<input type="button" value="start" (click)="start()">
+<div>
+	<p id="content">{{ data }} </p>
+	<input type="button" value="start" (click)="start()">
+  <p>請說"帶我去XXX"或是直接說"地點"</p>
+	<input type="button" value="stop" (click)="stop()">
+  <p>環境很吵~請按stop</p>
+</div>

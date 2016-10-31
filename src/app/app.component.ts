@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +10,13 @@ export class AppComponent {
   lat: number = 51.678418;
   lng: number = 7.809007;
 
+  constructor(private zone: NgZone) {
+
+  }
+
   setloc(data) {
     this.lat = data.lat;
     this.lng = data.lng;
+    this.zone.run(() => { })
   }
 }

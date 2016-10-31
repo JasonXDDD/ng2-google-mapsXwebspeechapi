@@ -19,7 +19,7 @@ import { TestobjComponent } from './testobj/testobj.component';
     FormsModule,
     HttpModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDBLIZVXRdpoqfHEAQWd-uSEpv4Vt60W4s'
+      apiKey: '[Your MAPS API KEYS]'
     })
   ],
   providers: [],

@@ -6,12 +6,18 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="assets/show.PNG"/>
+  <meta property="og:image" content="https://c2.staticflickr.com/6/5557/30604952921_f5dfe80746.jpg" />
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
   <app-root>Loading...</app-root>
+
+  <script>
+    if(navigator.userAgent.indexOf('Chrome') == -1){
+      window.location.href = '/assets/error.html';
+    }
+  </script>
 </body>
 </html>

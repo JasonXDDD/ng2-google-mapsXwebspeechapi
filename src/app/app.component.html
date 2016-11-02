@@ -7,11 +7,13 @@
   [longitude]="lng"
   [zoom]="13"
 	[disableDefaultUI]="true">
-
   <sebm-google-map-marker [latitude]="lat" [longitude]="lng">
+    如果畫面顯示有任何問題，請檢測當前瀏覽器是否為Google Chrome，若有任何問題，歡迎與我討論。
 
 	</sebm-google-map-marker>
 </sebm-google-map>
 
-<app-speech (latlng)="setloc($event)"></app-speech>
+<app-speech (latlng)="setloc($event)">
+
+</app-speech>
 <!--<app-testobj></app-testobj>-->
